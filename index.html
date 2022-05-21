@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
     <head>
     <script src="script.js"></script>
@@ -6,11 +7,36 @@
     <body>
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <div class ="div1">Amount <span class ="spancenter1"><input type="number"  id="principal"></span> </div> <br>
+        <div class ="div2">Interest Rate <span class ="slidecenter"> <input type="range" step = "0.10"min="0.00" max="1000.00"  id="rate"> </span> <span id ="slidez"> </span>%</div><br>
+        <div class ="div3">No. of Years <span class ="spancenter3"> <select name="years"  id="years">
+        <option value="" selected="selected">1</option>
+        <option value="" selected="selected">2</option>
+        <option value="" selected="selected">3</option>
+        <option value="" selected="selected">4</option>
+        <option value="" selected="selected">5</option>
+        <option value="" selected="selected">6</option>
+        <option value="" selected="selected">7</option>
+        <option value="" selected="selected">8</option>
+        <option value="" selected="selected">9</option>
+        <option value="" selected="selected">10</option>
+        </select> </span> </div><br>
+        <div class ="buttoncenter">
+        <button id = "btn" onclick="compute()">Compute Interest</button> </div> <br>
+        <div class ="r1"><span id ="resu1"></span><span class ="res1" id ="result1"></span> <span id = "resu5"></span></div> <br>
+        <div class ="r2"><span id ="resu2"></span><span class ="res2" id ="result2"></span> <span id = "resu6"></span></div> <br>
+        <div class ="r3"><span id ="resu3"></span><span class ="res3" id ="result3"></span> <span id = "resu7"></span></div> <br>
+        <div class ="r4"><span id ="resu4"></span><span class ="res4" id ="result4"></span> </div> <br>
+        <div class ="cp">&copy Everyone Can Get Rich</div>
     </body>
+<script>
+var slide = document.getElementById("rate");
+var out = document.getElementById("slidez");
+out.innerHTML = (slide.value); // Display the default slider value
+
+slide.oninput = function() {
+  out.innerHTML = (this.value);
+}
+
+</script>
 </html>

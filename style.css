@@ -1,4 +1,19 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {background-color:white;}
+h1{color:grey; text-align: center; font-family: Arial;}
+.div1{padding-left:40%; font-family: Arial;}
+.div2{padding-left:40%; font-family: Arial;}
+.div3{padding-left:40%; font-family: Arial;}
+.spancenter1{margin-left:50px; }
+.slidecenter{margin-left:20px;}
+.spancenter3{margin-left:25px;}
+.buttoncenter{padding-left:40%;align-items:center; justify-content:center;}
+h3{text-align:center;}
+.res1{background-color: rgb(233, 233, 43);font-family: Arial;}
+.res2{background-color: rgb(233, 233, 43);font-family: Arial;}
+.res3{background-color: rgb(233, 233, 43);font-family: Arial;}
+.res4{background-color: rgb(233, 233, 43);font-family: Arial;}
+.r1{padding-left:40%;font-family: Arial;}
+.r2{padding-left:40%;font-family: Arial;}
+.r3{padding-left:40%;font-family: Arial;}
+.r4{padding-left:40%;font-family: Arial;}
+.cp{padding-left:35%;font-family: Arial;}
